@@ -8,7 +8,7 @@ A local two-player chess game in **vanilla JavaScript** — no framework, no che
 library. Both players share the board; the game enforces every rule and calls the
 result.
 
-**▶ Play it: https://pastbologanesh0101.github.io/chess-two-player/**
+**▶ Play it: https://chess-two-player.vercel.app** &nbsp;·&nbsp; mirror: [GitHub Pages](https://pastbologanesh0101.github.io/chess-two-player/)
 
 ![Screenshot: scholar's mate, board showing the checkmated black king and the move list](docs/screenshot.png)
 
