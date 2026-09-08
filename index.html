@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Two-Player Chess</title>
+    <meta
+      name="description"
+      content="A local two-player chess game with a fully legal, perft-verified move engine. Vanilla JavaScript, no dependencies."
+    />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='14' font-size='14'>%E2%99%9E</text></svg>" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <h1>Two-Player Chess</h1>
+        <p class="app__tagline">
+          Same board, two players. Every rule enforced &mdash; castling, en
+          passant, promotion, the draw conditions.
+        </p>
+      </header>
+
+      <div class="game">
+        <div class="board-area">
+          <div id="board" class="board" aria-label="chess board"></div>
+        </div>
+
+        <aside class="panel">
+          <div id="status" class="status" role="status">White to move</div>
+
+          <div class="captures">
+            <div class="captures__row">
+              <span class="captures__label">White&nbsp;took</span>
+              <span id="capturedByWhite" class="captures__pieces"></span>
+            </div>
+            <div class="captures__row">
+              <span class="captures__label">Black&nbsp;took</span>
+              <span id="capturedByBlack" class="captures__pieces"></span>
+            </div>
+          </div>
+
+          <div class="controls">
+            <button id="newGame" type="button">New game</button>
+            <button id="undo" type="button">Undo</button>
+            <button id="flip" type="button">Flip board</button>
+          </div>
+
+          <ol id="moves" class="moves" aria-label="move list"></ol>
+        </aside>
+      </div>
+
+      <footer class="app__footer">
+        <a href="https://github.com/pastbologanesh0101/chess-two-player">Source on GitHub</a>
+      </footer>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
